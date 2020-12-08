@@ -11,7 +11,7 @@ pipeline {
           stage('Apple') {
             steps {
               echo "stage: Apple"
-              sleep 2
+              sleep 5
               }
              }      
            stage('Banana') {
@@ -23,7 +23,7 @@ pipeline {
            stage('Peach') {
             steps {
               echo "stage: Peach"
-                sleep 2
+                sleep 3
                    }
                            }
            stage('After') {
