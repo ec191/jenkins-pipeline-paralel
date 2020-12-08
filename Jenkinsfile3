@@ -23,21 +23,18 @@ pipeline {
                 echo 'stage: Banana'
                   sleep 2
                      }
-           }
+                           }
            stage('Peach') {
             steps {
               echo 'stage: Peach'
                 sleep 2
-                }
-               }
+                   }
+                           }
            stage('After') {
             steps {
               echo 'stage: After'
-              }
+                  }
+                          }
              }
              }
              }
-            
-            
-           
-            
