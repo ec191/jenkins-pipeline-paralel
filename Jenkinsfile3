@@ -1,0 +1,43 @@
+pipeline {
+  agent any
+  
+  stages {
+  
+    stage('Before') {
+        steps {
+            echo 'Before'
+              }
+       }
+      stage('Para') {
+        paralel {
+          stage('Apple') {
+            steps {
+              echo 'stage: Apple'
+              sleep 2
+              }
+             }
+            
+           
+           stage('Banana') {
+              steps {
+                echo 'stage: Banana'
+                  sleep 2
+                     }
+           }
+           stage('Peach') {
+            steps {
+              echo 'stage: Peach'
+                sleep 2
+                }
+               }
+           stage('After') {
+            steps {
+              echo 'stage: After'
+              }
+             }
+             }
+             }
+            }
+            
+           }
+            
