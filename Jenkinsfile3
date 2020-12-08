@@ -3,32 +3,32 @@ pipeline {
     stages {
       stage('Before') {
         steps {
-            echo 'Before'
+            echo "Before"
               }
        }
-      stage('Para') {
-        paralel {
+      stage('Para'){
+        parallel {
           stage('Apple') {
             steps {
-              echo 'stage: Apple'
+              echo "stage: Apple"
               sleep 2
               }
              }      
            stage('Banana') {
               steps {
-                echo 'stage: Banana'
+                echo "stage: Banana"
                   sleep 2
                      }
                            }
            stage('Peach') {
             steps {
-              echo 'stage: Peach'
+              echo "stage: Peach"
                 sleep 2
                    }
                            }
            stage('After') {
             steps {
-              echo 'stage: After'
+              echo "stage: After"
                   }
                           }
              }
