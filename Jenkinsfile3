@@ -1,9 +1,7 @@
 pipeline {
   agent any
-  
-  stages {
-  
-    stage('Before') {
+    stages {
+      stage('Before') {
         steps {
             echo 'Before'
               }
@@ -15,9 +13,7 @@ pipeline {
               echo 'stage: Apple'
               sleep 2
               }
-             }
-            
-           
+             }      
            stage('Banana') {
               steps {
                 echo 'stage: Banana'
